@@ -42,14 +42,20 @@ public class Main {
 
 
         System.out.println("Conteudos inscritos Lucas " + devLucas.getConteudosIncritos());
-        
+        devLucas.progredir();
+        devLucas.progredir();
         System.out.println("Conteudos concluidos Lucas " + devLucas.getConteudosConcluidos());
+        System.out.println("XP " + devLucas.calcularTotalXp() );
+
+        System.out.println("=================");
+
         Dev devJoao = new Dev();
 
         devJoao.setNome("Joao");
         devJoao.inscreverBootcamp(bootcamp1);
         System.out.println("Conteudos inscritos Joao " + devJoao.getConteudosIncritos());
         System.out.println("Conteudos concluidos Joao " + devJoao.getConteudosConcluidos());
+        System.out.println("XP" + devJoao.calcularTotalXp() );
 
 
 
